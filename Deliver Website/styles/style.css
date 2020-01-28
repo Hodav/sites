@@ -2,7 +2,6 @@
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	font-family: Poppins, sans-serif;
 	box-sizing: border-box; 
 }
 ul,ol{
@@ -18,7 +17,9 @@ a, a:hover{
 	color: inherit;
 }
 body{
+	width: 100%;
 	font-weight: 500;
+	font-family: Poppins, sans-serif;
 }
 .container{
 	max-width: 1170px;
@@ -49,6 +50,7 @@ body{
 	margin-left: 30px;
 	cursor: pointer;
 }
+
 .header .second_line{
 	min-height: 120px;
 	background: #ffcc00;
@@ -66,7 +68,7 @@ body{
 	cursor: pointer;
 }
 .header .second_line .menu{
-
+	white-space: nowrap;
 	text-transform: uppercase;
 	max-width: 700px;
 	margin: 0 auto;
@@ -76,19 +78,21 @@ body{
 }
 .header .second_line .menu ul{
 	display: flex;
-	position: relative;
+}
+.header .second_line .menu .first_line_of_menu{
+	float: left;
+}
+.header .second_line .menu .second_line_of_menu{
+	float: left;
 }
 .header .second_line .menu ul li{
-	
 	height: 100%;
 	padding: 0 10px;
 	margin:0 12px;
 	position: relative;
 }
 .header .second_line .menu ul li a{
-	-webkit-transition: all 1s;
-	-o-transition: all 1s;
-	transition: all 1s;
+	
 }
 .header .second_line .menu ul li:before{
 	content: "";
@@ -99,10 +103,12 @@ body{
 	left: -2px;
 	bottom: -50px;
 	opacity: 0;
-	transition: all .3s
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
 }
 .header .second_line .menu ul li:hover{
-	font-weight: 600;
+	text-shadow: 0 0 0 #ba0000;
 }
 .header .second_line .menu ul li:hover:before{
 	opacity: 1;
@@ -118,6 +124,65 @@ body{
 	padding: 14px;
 	position: relative;
 	cursor: pointer;
+}
+@media screen and (max-width: 900px){
+	.header .second_line .menu{
+		max-width: 800px;
+		margin: 0 auto;
+  		justify-content: space-around;
+		display: block;
+	}
+	.header .second_line .menu .first_line_of_menu{
+		max-width: 100%;
+		float: none;
+		margin-bottom: 10px;
+	}
+	.header .second_line .menu .second_line_of_menu{
+		max-width: 100%;
+		margin: 0 auto;
+		float: none;
+	}
+	.header .second_line .menu ul{
+		display: flex;
+		justify-content: space-around;
+	}
+	.header .second_line .menu ul li{
+	
+		padding: 0 10px;
+		margin:0 12px;
+	}
+	.header .second_line .menu ul li:before{
+		content: "";
+		background: #ba0000;
+		height: 2px;
+		width: 100%;
+		position: absolute;
+		left: -0px;
+		bottom: -8px;
+		opacity: 0;
+		-webkit-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+	}
+	.header .second_line .menu ul li:hover{
+		text-shadow: 0 0 0 #ba0000;
+	}
+	.header .second_line .menu ul li:hover:before{
+		opacity: 1;
+	}
+}
+@media screen and (max-width: 625px){
+	.header .second_line .container{
+		display: block;
+		min-height: 200px;
+	}
+	.header .second_line .logo{
+		padding: 10px 0;
+		margin: 0 auto;
+	}
+	.header .second_line .search{
+		margin: 15px auto 0;
+	}
 }
 .third_line{
 	min-height: 800px;
@@ -151,7 +216,7 @@ body{
 	color: #ffcc00;
 	margin-bottom: 50px;
 }
-.third_line .content div{
+.third_line .content .amazing_quick_247supports{
 	font-size: 20px;
 	font-weight: 600;
 	color: #fff;
@@ -167,7 +232,7 @@ body{
 .btn{
 	border: 2px solid #fff;
 	border-radius:50px;
-	padding: 10px 30px;
+	padding: 9px 30px 11px;
 	text-transform: uppercase;
 	font-weight: 600;
 	margin-right: 20px;
@@ -175,12 +240,49 @@ body{
 
 .btn span{
 	font-size: 12px;
-
-	
+	color: #fff;
 }
 .btn:hover{
 	background: #ffcc00;
 	color: #ba0000 !important;
 	border: 2px solid #ffcc00;
 
+}
+@media screen and (max-width: 625px){
+	.third_line{
+		min-height: 600px;
+		background-image: url(../img/bg1.jpg);
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: 30% 50% ;
+	}
+	.third_line .content{
+		min-height: 350px;
+		color: #fff;
+	}
+	.third_line .content h1{
+		font-size: 50px;
+		word-spacing: 10px;
+		margin-bottom: 30px;
+	}
+	.third_line .content hr{
+		margin-bottom: 30px;
+	}
+	.third_line .content p{
+		font-size: 15px;
+		font-weight: 400;
+		color: #ffcc00;
+		margin-bottom: 20px;
+	}
+	.third_line .content .amazing_quick_247supports{
+		font-size: 15px;
+		font-weight: 600;
+		color: #fff;
+		margin-bottom: 40px;
+	}
+	.third_line .content .dot{
+		font-size: 15px;
+		margin: 0 10px;
+		color: #ffcc00;
+	}
 }
