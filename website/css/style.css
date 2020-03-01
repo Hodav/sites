@@ -111,26 +111,20 @@ body{
 
 .carousel-item{
 	background-attachment: fixed;
-
 }
 .main .container{
 	max-width: 1170px;
 	background: rgba(255,255,255,.7);
 }
-.controls{
-	position: fixed;
-	right: 8%;
-	top: 50%;
-}
-.controls div{
-	border: 1px solid #fff ;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	margin-bottom: 10px;
-}
-@media screen and (min-width: 1350px) {
-	.controls{right: 13%;}
+.slide span{
+	/*background: rgb(5,101,255);*/
+	position: relative;
+	bottom: -9em;
+	font-size: 3em;
+	color: #fff;
+	margin-left: 50%;
+	font-weight: 600;
+	text-shadow: 1px 1px 5px #000;
 }
 h2{
 	text-align: center;
