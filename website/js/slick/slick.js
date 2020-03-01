@@ -66,7 +66,7 @@
                 initialSlide: 0,
                 lazyLoad: 'ondemand',
                 mobileFirst: false,
-                pauseOnHover: true,
+                pauseOnHover: false,
                 pauseOnFocus: true,
                 pauseOnDotsHover: false,
                 respondTo: 'window',
