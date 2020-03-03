@@ -371,6 +371,7 @@ h2{
 }
 .item_page .galery img{
 	max-height: 60vh;
+	max-width: 100%;
 }
 th{
 	padding: 10px;
