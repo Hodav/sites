@@ -352,7 +352,7 @@ h2{
 /*item start*/
 .item_page{
 	padding: 2% 0;
-	height: 80vh;
+	height: 83vh;
 }
 .item_page .text{
 	padding: 5%;
@@ -364,9 +364,16 @@ h2{
 	width: 60%;
 	float: left;
 }
+.item_page .galery li{
+	max-height: 60vh;
+	display: flex;
+	justify-content: space-around;
+}
 .item_page .galery img{
-	max-width: 100%;
-	height: auto;
+	max-height: 60vh;
+}
+th{
+	padding: 10px;
 }
 
 /*item end*/
