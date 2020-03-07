@@ -513,13 +513,12 @@ h2{
 /*item start*/
 .item_page{
 	padding: 2% 0;
-	height: 83vh;
+	min-height: 83vh;
 }
 .item_page .text{
 	padding: 5%;
 	width: 40%;
 	float: left;
-	
 }
 .item_page .galery{
 	width: 60%;
@@ -534,17 +533,31 @@ h2{
 	max-height: 60vh;
 	max-width: 100%;
 }
-
-
 th{
 	padding: 10px;
+}
+.item_page .text .origianal a{
+	display: flex;
+	color: #288be6;
+}
+.item_page .text .origianal p{
+	border-bottom: 1.5px dashed rgba(40,139,230,.8);
+}
+.item_page .text .origianal a span{
+	display: block;
+	margin-top: 4px;
+	margin-right: 5px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	border: 2px dotted #288be6;
+	background: rgba();
 }
 
 @media (max-width: 920px){
 	footer .menu{
 		display:none;
-	}
-	
+	}	
 }
 @media (max-width: 991px){
 	.container{
@@ -567,6 +580,15 @@ th{
 	left: -60px;
 	width: 150%;
 	height: auto;
+	}
+	.item_page .galery{
+	width: 100%;
+	float: none;
+	}
+	.item_page .text{
+	width: 100%;
+	float: none;
+	text-align: center;
 	}
 }
 @media (max-width: 767px){
@@ -683,7 +705,7 @@ th{
 		margin: auto;
 	}
 	.footer1 .contact__contacts .soc img{
-		width: 50px;
+		width: 30px;
 		margin: 0 5px;
 	}
 	.footer-contacts{
