@@ -22,31 +22,36 @@
 	
 	<header class="header">
     <div class="container">
-    	<div class="logo"><img src="img/logo.png" alt="логотип"></div>
-	    <div class="menu">
-	    	<ul>
-		      <li><a href="index.html" style="text-decoration: none; color: #0565FF; text-shadow: 0 0 0  #0565FF;">ГЛАВНАЯ</a></li>
-		      <li><a href="our_cases.html">НАШИ РАБОТЫ</a></li>
-		      <li><a href="about_us.html">О НАС</a></li>
-		      <li><a href="contacts.html">КОНТАКТЫ</a></li>
-	    	</ul>
+    	<div class="header__body">
+    		<div class="header__logo"><img src="img/logo.png" alt="логотип"></div>
+    		<div class="header__burger">
+    			<span></span>
+    		</div>
+    		<nav class="header__menu">
+    			<ul class="header__list">
+    				<li><a href="index.html" class="header__link">ГЛАВНАЯ</a></li>
+    				<li><a href="our_cases.html" class="header__link">НАШИ РАБОТЫ</a></li>
+    				<li><a href="about_us.html" class="header__link">О НАС</a></li>
+    				<li><a href="contacts.html" class="header__link">КОНТАКТЫ</a></li>
+    			</ul>
+    		</nav>
 		</div>
 	</div>
   	</header>
 	<div class="slider mainSlider">
-		<div class="slide slide-1"><span>Более 30 лет работы</span></div>
-		<div class="slide slide-2"><span>Современные материалы</span></div>
-		<div class="slide slide-3"><span>Передовые технологии</span></div>
-		<div class="slide slide-4"><span>Качественно и в срок</span></div>
-		<div class="slide slide-5"><span>Мы любим свое дело</span></div>
-		<div class="slide slide-6"><span>Мы любим свое дело</span></div>
+		<div class="slide slide-1"><img src="img/k1.jpg" alt=""><span>Более 30 лет работы</span></div>
+		<div class="slide slide-2"><img src="img/k2.jpg" alt=""><span>Современные материалы</span></div>
+		<div class="slide slide-3"><img src="img/k3.jpg" alt=""><span>Передовые технологии</span></div>
+		<div class="slide slide-4"><img src="img/k4.jpg" alt=""><span>Качественно и в срок</span></div>
+		<div class="slide slide-5"><img src="img/k5.jpg" alt=""><span>Мы любим свое дело</span></div>
+		<div class="slide slide-6"><img src="img/k6.jpg" alt=""><span>Мы любим свое дело</span></div>
 	</div>
 
 	<footer class="footer footer1" >
     <div class="container">
       <div class="main_text">
       Изготовление макетов</br>
-      <div>кораблей <span>&#9679</span> техники <span>&#9679</span> зданий</div>
+      <div class="main_text__items">кораблей <span>&#9679</span> техники <span>&#9679</span> зданий</div>
              </div>
       <div class="contacts">
         <div class="soc">
@@ -85,5 +90,7 @@
 		}
 	})	
 </script>
+<script src="js/script.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

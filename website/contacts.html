@@ -23,24 +23,33 @@
 	
 	<header class="header">
     <div class="container">
-    <div class="logo"><img src="img/logo.png" alt="логотип"></div>
-    <div class="menu"><ul>
-      <li><a href="index.html" >ГЛАВНАЯ</a></li>
-      <li><a href="our_cases.html">НАШИ РАБОТЫ</a></li>
-      <li><a href="about_us.html">О НАС</a></li>
-      <li><a href="contacts.html" style="text-decoration: none; color: #0565FF; text-shadow: 0 0 0  #0565FF;">КОНТАКТЫ</a></li>
-    </ul></div></div>
+    	<div class="header__body">
+    		<div class="header__logo"><img src="img/logo.png" alt="логотип"></div>
+    		<div class="header__burger">
+    			<span></span>
+    		</div>
+    		<nav class="header__menu">
+    			<ul class="header__list">
+    				<li><a href="index.html" class="header__link">ГЛАВНАЯ</a></li>
+    				<li><a href="our_cases.html" class="header__link">НАШИ РАБОТЫ</a></li>
+    				<li><a href="about_us.html" class="header__link">О НАС</a></li>
+    				<li><a href="contacts.html" class="header__link">КОНТАКТЫ</a></li>
+    			</ul>
+    		</nav>
+		</div>
+	</div>
   	</header>
 	<div class="slider mainSlider">
-		<div class="slide slide-1"></div>
-		<div class="slide slide-2"></div>
-		<div class="slide slide-3"></div>
-		<div class="slide slide-4"></div>
-		<div class="slide slide-5"></div>
-		<div class="slide slide-6"></div>
+		<div class="slide slide-1"><img src="img/k1.jpg" alt=""></div>
+		<div class="slide slide-2"><img src="img/k2.jpg" alt=""></div>
+		<div class="slide slide-3"><img src="img/k3.jpg" alt=""></div>
+		<div class="slide slide-4"><img src="img/k4.jpg" alt=""></div>
+		<div class="slide slide-5"><img src="img/k5.jpg" alt=""></div>
+		<div class="slide slide-6"><img src="img/k6.jpg" alt=""></div>
 	</div>
 	<main class="main fore-ground">
 		<div class="container contact_page">
+			<div class="contacts__info">
 			<h2>Контакты</h2>
 			<img src="img/phone.svg">
 			<div class="phone" tel="+79051330399">+7<span>(</span>915<span>)</span> 969-17-05</div>
@@ -48,14 +57,15 @@
         	<div class="mail">MODELYAR76<span>@</span>mail.com</div>
         	<img src="img/pin.svg">
         	<div class="mail">Ярославская обл. <span>/</span> г. Рыбинск</div>
+			</div>
 		</div>
 	</main>
 
-	<footer class="footer footer1">
+	<footer class="footer footer1 footer-contacts">
     <div class="container">
       <div class="logo">
              </div>
-      <div class="contacts">
+      <div class="contacts contact__contacts">
         <div class="soc">
           <img src="img/vk.svg" alt="vk">
           <img src="img/facebook.svg" alt="facebook">
@@ -86,99 +96,6 @@
 		}
 	})	
 </script>
+<script src="js/script.js"></script>
 </body>
 </html>
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatiable" content="ie=edge">
-	<title>ModelYar</title>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-	<script src="js/slick/slick.js"></script>
-	<link rel = "stylesheet" href ="js/slick/slick-theme.css">
-	<link rel = "stylesheet" href ="js/slick/slick.css">
-	<link rel = "stylesheet" href ="css/bootstrap.css">
-	<link rel = "stylesheet" href ="css/bootstrap-grid.css">
-	<link rel = "stylesheet" href ="css/style.css">
-</head>
-<body>
-<header class="header">
-    <div class="container">
-	    <div class="logo"><img src="img/logo.png" alt="логотип"></div>
-	    <div class="menu">
-	    	<ul>
-		    	<li><a href="index.html">ГЛАВНАЯ</a></li>
-		    	<li><a href="our_cases.html">НАШИ РАБОТЫ</a></li>
-		    	<li><a href="about_us.html">О НАС</a></li>
-		    	<li><a href="contacts.html" style="text-decoration: none; color: #0565FF; text-shadow: 0 0 0  #0565FF;" >КОНТАКТЫ</a></li>
-	    	</ul>
-		</div>
-	</div>
-</header>
-<div class="slider mainSlider">
-		<div class="slide slide-1"></div>
-		<div class="slide slide-2"></div>
-		<div class="slide slide-3"></div>
-		<div class="slide slide-4"></div>
-		<div class="slide slide-5"></div>
-		<div class="slide slide-6"></div>
-	</div>
-<main class="main fore-ground">
-
-	<div class="container contact">
-		<div class="contact-block">
-			<div class ="contact-contact"><h1>Контакты</h1></div>
-			<div class="row">
-				<div><img src="img/icon-phone-header.svg" style="margin-right: 30px"></div>
-				<div class="phone" tel="+79051330399">
-	         	+7(905) 133-03-99
-	        	</div>
-	        </div>
-	        <div class ="row">
-		        <div><img src="img/icon-email-header.svg" style="margin-right: 30px"></div>
-	        	<div class="mail">
-	          	modelyar@mail.com
-	        	</div>
-        	</div>
-		</div>
-	</div>
-</main>
-
-<footer class="footer footer-contacts fore-ground">
-    <div class="container">
-      <div class="logo">
-             </div>
-
-      <div class="contacts">
-        <div class="soc">
-          <img src="img/vk.svg" alt="vk">
-          <img src="img/facebook.svg" alt="facebook">
-          <img src="img/instagram.svg" alt="instagram">
-          <img src="img/whatsapp.svg" alt="whatsapp">
-        </div>
-      </div>
-    </div>
-	</footer>
-	<script>
-	$(document).ready(function() {
-		if($('.mainSlider').length){
-			$('.mainSlider').slick({
-				dots: false,
-				arrows: false,
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				autoplay: true,
- 				autoplaySpeed: 3000,
- 				infinite: true,
-  				speed: 1000,
- 				fade: true,
-  				cssEase: 'linear'
-			})
-		}
-	})	
-</script>
-</body> -->
